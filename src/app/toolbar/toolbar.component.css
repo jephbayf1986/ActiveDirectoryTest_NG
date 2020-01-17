@@ -1,0 +1,30 @@
+.left-menu {
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+    margin: 0 60px 0 0;
+    height: 100%;
+}
+
+.left-menu > li {
+    display: inline-block;
+    margin-left: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.right-menu {
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    margin: 0 60px 0 0;
+    padding: 0;
+    height: 100%;
+}
+
+.right-menu > li {
+    display: inline-block;
+    margin-left: 20px;
+    height: 100%;
+    cursor: pointer;
+}

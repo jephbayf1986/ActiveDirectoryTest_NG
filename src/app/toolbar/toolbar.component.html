@@ -1,0 +1,45 @@
+<ul class="left-menu">
+    <li>
+        <a [routerLink]="['/']">
+            Public Page
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/unprotected']">
+            Unprotected Page
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/protected']">
+            Protected Page
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/test-api']">
+            Test Api
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/swearwords']">
+            Swear Words
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/admin-only-api']">
+            Admin Only Api
+        </a>
+    </li>
+</ul>
+<ul class="right-menu">
+    <li *ngIf="signedIn">
+        <a [routerLink]="['/profile']">
+            Profile
+        </a>
+    </li>
+    <li *ngIf="signedIn" (click)="signOut()">
+        Sign Out
+    </li>
+    <li *ngIf="!signedIn" (click)="signIn()">
+        Sign In
+    </li>
+</ul>

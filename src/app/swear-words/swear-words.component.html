@@ -1,0 +1,15 @@
+<h4>Current Top 10 Swear Words</h4>
+<table class='table' *ngIf="swearWords">
+    <thead>
+        <tr>
+        <th>Identity</th>
+        <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let swearWord of swearWords">
+        <td>{{ swearWord.id }}</td>
+        <td>{{ swearWord.name }}</td>
+        </tr>
+    </tbody>
+</table>
